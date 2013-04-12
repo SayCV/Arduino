@@ -484,6 +484,8 @@
     
     <!-- Unzip AVR tools -->
     <unzip dest="windows/work/hardware" src="windows/avr_tools.zip" overwrite="false"/>
+    
+    <unzip dest="windows/work" src="windows/jre.zip" overwrite="false"/>
 
     <copy todir="windows/work/hardware/tools/avr/avr/include/avr">
       <fileset file="windows/eeprom.h" />
@@ -524,8 +526,10 @@
     <!--get src="http://dev.processing.org/build/jre-tools-6u18-windows-i586.zip" 
 	 dest="windows/jre.zip" 
 	 usetimestamp="true" /-->
-
+		
+		<!--
     <unzip dest="windows/work" src="windows/jre.zip" overwrite="false"/>
+    -->
 
     <!--
     <zip basedir="windows/work" 
